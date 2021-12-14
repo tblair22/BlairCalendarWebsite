@@ -1,0 +1,192 @@
+<html>
+<head>
+<title>website</title>
+<script type="text/javascript"> src ="script.js"</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style ="background-image:url('kentGym.jpg');
+background-attachment:fixed;
+background-size:100%;">
+
+
+<a href="subCalendar.html"> <!-- This is the link to the second page of the website-->
+	<div>
+		<button class = "wrapper"> Click for a Custom Date </button> <!-- Button for other website-->
+	</div>
+</a>
+
+</body>
+
+<body>
+	<STitle>
+		<SRound>Kent Denver Gym Calendar</SRound><!-- Title of the website-->
+	</STitle>
+</body>
+
+<body>
+	<script type="text/javascript">
+		var currentDate = new Date();
+
+		function getTheDate(numSkips){ //Function gets the date
+			var currentDate = new Date();
+			var month = currentDate.getMonth();
+			var day = currentDate.getDate()+ numSkips;
+			var year = currentDate.getFullYear();
+			var fullDate = (month +1) + "/" + day + "/" + year;
+			return fullDate;
+		}
+
+
+		function sundayInfo(){// these functions are where I input the schedule of the day
+			return " There are no activities at this time";
+		}
+		function mondayInfo(){
+			return " Monday:  2:20 Middle School  2:40 high school 4:00 teacher time";
+		}
+		function tuesdayInfo(){
+			return " There is a workout at this random time";
+		}
+		function wednesdayInfo(){
+			return " There is a workout at this random time";
+		}
+		function thursdayInfo(){
+			return " There is a workout at this random time";
+		}
+		function fridayInfo(){
+			return " There is a workout at this random time";
+		}
+		function saturdayInfo(){
+			return " There is nothing on this day";
+		}
+
+		function getFunction(dateDay){// this function gets the word day for the date
+
+			if (dateDay == 0) {
+			var dateInfo = sundayInfo();
+
+			} else if (dateDay == 1) {
+				var dateInfo = mondayInfo();
+			} else if (dateDay == 2) {
+				var dateInfo = tuesdayInfo();
+			}else if (dateDay == 3) {
+				var dateInfo = wednesdayInfo();
+			}else if (dateDay == 4) {
+				var dateInfo = thursdayInfo();
+			}else if (dateDay == 5) {
+				var dateInfo = fridayInfo();
+			}else if (dateDay == 6) {
+				var dateInfo = saturdayInfo();
+			} else if (dateDay == 7) {
+				var dateInfo = sundayInfo();
+			} else if (dateDay == 8) {
+				var dateInfo = mondayInfo();
+			} else if (dateDay == 9) {
+				var dateInfo = tuesdayInfo();
+			}else if (dateDay == 10) {
+				var dateInfo = wednesdayInfo();
+			}else if (dateDay == 11) {
+				var dateInfo = thursdayInfo();
+			}else if (dateDay == 12) {
+				var dateInfo = fridayInfo();
+			}else if (dateDay == 13) {
+				var dateInfo = saturdayInfo();
+			}
+
+			return dateInfo;//returns the calendar for what day it is
+
+		}
+
+	</script>
+</body>
+
+<body>
+
+	<SDateDay>
+		<SBack>
+			<SBold>
+				<script type="text/javascript">
+
+					document.write(getTheDate(0));
+
+				</script>
+			</SBold>
+
+			<script type="text/javascript">
+
+				document.write(getFunction(currentDate.getDay()));
+
+			</script>
+		</Sback>
+	</SDateDay>
+
+	<SDateDay2>
+		<Sback2>
+			<SBold>
+				<script type="text/javascript">
+
+					document.write(getTheDate(1));
+				
+				</script>
+			</SBold>
+			<script type="text/javascript">
+
+				document.write(getFunction(currentDate.getDay()+1));
+				
+			</script>
+		</Sback2>
+	</SDateDay2>
+
+	<SDateDay3>
+		<Sback>
+			<SBold>
+				<script type="text/javascript">
+
+					document.write(getTheDate(2));
+				
+				</script>
+			</SBold>
+			<script type="text/javascript">
+
+				document.write(getFunction(currentDate.getDay()+2));
+				
+			</script>
+		</Sback>
+	</SDateDay3>
+
+	<SDateDay4>
+		<Sback2>
+			<SBold>
+				<script type="text/javascript">
+
+					document.write(getTheDate(3));
+				
+				</script>
+			</SBold>
+			<script type="text/javascript">
+
+				document.write(getFunction(currentDate.getDay()+3));
+				
+			</script>
+		</Sback2>
+	</SDateDay4>
+
+	<SDateDay5>
+		<Sback>
+			<SBold>
+				<script type="text/javascript">
+
+					document.write(getTheDate(4));
+				
+				</script>
+			</SBold>
+			<script type="text/javascript">
+
+				document.write(getFunction(currentDate.getDay()+4));
+				
+			</script>
+		</Sback>
+	</SDateDay5>
+
+</body>
+</html>
