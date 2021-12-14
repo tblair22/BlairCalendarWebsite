@@ -1,4 +1,4 @@
-STitle{
+STitle{ /* This tag is used in the title*/
 	position: absolute;
 	text-align: center;
 	font-size: 68px;
@@ -9,12 +9,12 @@ STitle{
 	color: darkred;
 }
 
-SBold{
+SBold{/* I can apply this wherever to underline and move words*/
 	text-decoration: underline;
 	padding: 25px 25px 25px 25px;
 }
 
-SDate{
+SDate{ /* For the first day*/
 	
 	font-size: 55;
 	padding-left: 30;
@@ -25,7 +25,7 @@ SDate{
 	text-align: center;
 }
 
-SDateDay{
+SDateDay{/* For the second day*/
 	position: absolute;
 	text-align: left;
 	font-size: 45px;
@@ -37,7 +37,7 @@ SDateDay{
 	color: black;
 }
 
-STest{
+STest{ /* This is a test  one that is not used in the website*/
 	position: absolute;
 	text-align: center;
 	font-size: 70px;
@@ -49,7 +49,7 @@ STest{
 
 }
 
-Sround{
+Sround{ /* This creates a rounded border around objects in the website*/
 	background-color: rgba(255, 255, 255, .65); /* Changing background color */
     border-radius: 30px; /* Making border radius */
     
@@ -58,15 +58,15 @@ Sround{
 
 }
 
-Sback{
+Sback{/* This is for a normal translucent white*/
 	background: rgba(255, 255, 255, .65);
 }
 
-Sback2{
+Sback2{/* This is slightly darker translucent white*/
 	background: rgba(240, 240, 240, .65);
 }
 
-SDateDay2{
+SDateDay2{/* day 2*/
 	position: absolute;
 	text-align: left;
 	font-size: 45px;
@@ -78,7 +78,7 @@ SDateDay2{
 
 }
 
-SDateDay3{
+SDateDay3{/* day 3*/
 	position: absolute;
 	text-align: left;
 	font-size: 45px;
@@ -90,7 +90,7 @@ SDateDay3{
 
 }
 
-SDateDay4{
+SDateDay4{/* day 4*/
 	position: absolute;
 	text-align: left;
 	font-size: 45px;
@@ -102,7 +102,7 @@ SDateDay4{
 
 }
 
-SDateDay5{
+SDateDay5{/* day 5*/
 	position: absolute;
 	text-align: left;
 	font-size: 45px;
@@ -114,18 +114,18 @@ SDateDay5{
 
 }
 
-SCalendarDrop{
+SCalendarDrop{/* This is for moving the calendar dropDown on the other subCalendar*/
 	position: absolute;
 	text-align: center;
 	font-size: 300px;
 	padding-left: 400px;
 }
 
-SButton{
+SButton{/* tests an absolute position for a button*/
 	position: absolute;
 }
 
-.wrapper{
+.wrapper{/* Is the actual position of the button*/
 	color: black;
 	font-size: 26px;
 	background-color: rgba(220, 220, 220, .65);
@@ -136,8 +136,8 @@ SButton{
 
 }
 
-.wrapper button{
+.wrapper button{/* This allows the button to be moved without removing the button functionality*/
 	position: absolute;
 }
 
-.wrapper:hover{opacity: 1;}
+.wrapper:hover{opacity: 1;}/* This chnages the buttons opacity when it is hovered over*/

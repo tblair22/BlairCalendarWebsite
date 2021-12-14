@@ -7,11 +7,11 @@
 
 <body style ="background-image:url('kentGym.jpg');
 background-attachment:fixed;
-background-size:100%;">
+background-size:100%;"> <!-- This is the background image of the subCalendar-->
 
 <a href="CalendarWebsite.html">
 	<div>
-		<button class = "wrapper">Click to go back to the main Calendar</button>
+		<button class = "wrapper">Click to go back to the main Calendar</button><!-- This button returns the user to the main page-->
 	</div>
 </a>
 
@@ -19,7 +19,7 @@ background-size:100%;">
 <body>
 	<input type="date" id="datePicker" name = "datePicker">
 
-	<script type="text/javascript">
+	<script type="text/javascript">//This is supposed to get the date that is chosen and convert it to a date but it is not functional yet
 		var date = new Date();
 		var year = datePicker.getFullYear();
 		var month = datePicker.getMonth()+1;
@@ -33,12 +33,12 @@ background-size:100%;">
 		}
 	</script>
 
-	<a action= title="thursdayI">
+	<form action= title="thursdayI"><!-- This form should be able to get the date from the user but it is not functional-->
 		<label for = " datePicker"> Pick a Date </label>
 		<input type="date" id = "datePicker" name="datePicker">
 		<input type="submit">
 		
-	</a>
+	</form>
 
 </body>
 
