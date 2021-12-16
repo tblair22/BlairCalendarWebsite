@@ -3,7 +3,7 @@ STitle{ /* This tag is used in the title*/
 	text-align: center;
 	font-size: 68px;
 	padding-top: 12px;
-	padding-left: 390px;
+	padding-left: 350px;
 	font-family: courier new;
 	font: bold;
 	color: darkred;
@@ -70,7 +70,7 @@ SDateDay2{/* day 2*/
 	position: absolute;
 	text-align: left;
 	font-size: 45px;
-	padding-left: 400px;
+	padding-left: 360px;
 	padding-top: 200px;
 	font-family: sans-serif;
 	inline-size: min-content;
@@ -82,7 +82,7 @@ SDateDay3{/* day 3*/
 	position: absolute;
 	text-align: left;
 	font-size: 45px;
-	padding-left: 720px;
+	padding-left: 690px;
 	padding-top: 200px;
 	font-family: sans-serif;
 	inline-size: min-content;
@@ -94,7 +94,7 @@ SDateDay4{/* day 4*/
 	position: absolute;
 	text-align: left;
 	font-size: 45px;
-	padding-left: 1040px;
+	padding-left: 1020px;
 	padding-top: 200px;
 	font-family: sans-serif;
 	inline-size: min-content;
@@ -106,7 +106,7 @@ SDateDay5{/* day 5*/
 	position: absolute;
 	text-align: left;
 	font-size: 45px;
-	padding-left: 1300px;
+	padding-left: 1345px;
 	padding-top: 200px;
 	font-family: sans-serif;
 	inline-size: min-content;
