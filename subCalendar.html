@@ -1,0 +1,52 @@
+<!-- 
+Trent Blair
+The purpose of this program is to be the secondary page of the website and provide a specific day for the user.
+-->
+
+<html>
+<head>
+<title>website</title>
+<script type="text/javascript"> src ="script.js"</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style ="background-image:url('kentGym.jpg');
+background-attachment:fixed;
+background-size:100%;"> <!-- This is the background image of the subCalendar-->
+
+<a href="CalendarWebsite.html">
+	<div>
+		<button class = "wrapper">Click to go back to the main Calendar</button><!-- This button returns the user to the main page-->
+	</div>
+</a>
+
+
+<body>
+	<input type="date" id="datePicker" name = "datePicker">
+
+	<script type="text/javascript">//This is supposed to get the date that is chosen and convert it to a date but it is not functional yet
+		var date = new Date();
+		var year = datePicker.getFullYear();
+		var month = datePicker.getMonth()+1;
+		var currentDate = date.getDate();
+		var datePattern = year + month + currentDate;
+		document.getElementById("datePicker").value = datePattern;
+		document.write(datePattern);
+
+		function test(){
+			return hello;
+		}
+	</script>
+
+	<form action= title="thursdayI"><!-- This form should be able to get the date from the user but it is not functional-->
+		<label for = " datePicker"> Pick a Date </label>
+		<input type="date" id = "datePicker" name="datePicker">
+		<input type="submit">
+		
+	</form>
+
+</body>
+
+</body>
+
+</html>

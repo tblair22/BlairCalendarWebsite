@@ -1,0 +1,243 @@
+<!-- 
+Trent Blair
+The purpose of this program is to be the main page of my website and provide the schedule for the gym in the upcoming days.
+-->
+
+
+<html>
+<head>
+<title>website</title>
+<script type="text/javascript"> src ="script.js"</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<SBottomHeader></SBottomHeader>
+	
+	<SHeader></SHeader>
+	
+	<SHeaderRed></SHeaderRed>
+
+	<SBottomWhite></SBottomWhite>
+
+	<SBlackLine></SBlackLine>
+	<SBlackLine2></SBlackLine2>
+	<SBlackLine3></SBlackLine3>
+	<SBlackLine4></SBlackLine4>
+	<STimeLine></STimeLine>
+
+</body>
+
+
+<body>
+	<style type="text/css">
+		body{
+			background-image:url('kentGym.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 1680px;
+		}
+	</style>
+
+<!--
+<a href="https://www.kentdenver.org">  This is the link to the second page
+	<div>
+		<button class = "wrapper"> Click for a Custom</button> Button for other website
+	</div>
+</a> 
+-->
+</body>
+
+<body>
+	<STitle>
+		Kent Denver Gym Calendar<!-- Title of the website-->
+	</STitle>
+</body>
+
+<body>
+	<script type="text/javascript">
+		var currentDate = new Date();
+
+		function getTheDate(numSkips){ //Function gets the date
+			var currentDate = new Date();
+			var month = currentDate.getMonth();
+			var day = currentDate.getDate()+ numSkips;
+			var year = currentDate.getFullYear();
+			var fullDate = (month +1) + "/" + day + "/" + year;//sets up the date
+			return fullDate;
+		}
+
+
+		function sundayInfo(){// these functions are where I input the schedule of the day
+			return " No-School";
+		}
+		function mondayInfo(){
+			return " Middle-School Performance Open-Gym FGT";
+		}
+		function tuesdayInfo(){
+			return " Open-Gym Performance Open-Gym";
+		}
+		function wednesdayInfo(){
+			return " Middle-School Performance Open-Gym FGT";
+		}
+		function thursdayInfo(){
+			return " Open-Gym Performance Open-Gym";
+		}
+		function fridayInfo(){
+			return " Middle-School Performance Open-Gym";
+		}
+		function saturdayInfo(){
+			return " No-School";
+		}
+
+		function getFunction(dateDay){// this function gets the word day for the date
+
+			if (dateDay == 0) {
+			var dateInfo = sundayInfo();
+
+			} else if (dateDay == 1) {
+				var dateInfo = mondayInfo();
+			} else if (dateDay == 2) {
+				var dateInfo = tuesdayInfo();
+			}else if (dateDay == 3) {
+				var dateInfo = wednesdayInfo();
+			}else if (dateDay == 4) {
+				var dateInfo = thursdayInfo();
+			}else if (dateDay == 5) {
+				var dateInfo = fridayInfo();
+			}else if (dateDay == 6) {
+				var dateInfo = saturdayInfo();
+			} else if (dateDay == 7) {
+				var dateInfo = sundayInfo();
+			} else if (dateDay == 8) {
+				var dateInfo = mondayInfo();
+			} else if (dateDay == 9) {
+				var dateInfo = tuesdayInfo();
+			}else if (dateDay == 10) {
+				var dateInfo = wednesdayInfo();
+			}else if (dateDay == 11) {
+				var dateInfo = thursdayInfo();
+			}else if (dateDay == 12) {
+				var dateInfo = fridayInfo();
+			}else if (dateDay == 13) {
+				var dateInfo = saturdayInfo();
+			}
+
+			return dateInfo;//returns the calendar for what day it is
+
+		}
+
+	</script>
+</body>
+
+<body>
+
+	<SDateDay>
+		
+				<script type="text/javascript">
+
+					document.write(getTheDate(0));
+
+				</script>
+	
+	</SDateDay>
+		<SOne>
+			<script type="text/javascript">
+
+
+				document.write(getFunction(currentDate.getDay()));
+
+			</script>
+		</SOne>
+
+
+	<SDateDay2>
+	
+				<script type="text/javascript">
+
+					document.write(getTheDate(1));
+				
+				</script>
+		
+	</SDateDay2>
+	<STwo>
+			<script type="text/javascript">
+
+				document.write(getFunction(currentDate.getDay()+1));
+				
+			</script>
+	</STwo>
+
+	<SDateDay3>
+			
+				<script type="text/javascript">
+
+					document.write(getTheDate(2));
+				
+				</script>
+			
+	</SDateDay3>
+	<SThree>
+			<script type="text/javascript">
+
+				document.write(getFunction(currentDate.getDay()+2));
+				
+			</script>
+	</SThree>
+	
+
+	<SDateDay4>
+		
+				<script type="text/javascript">
+
+					document.write(getTheDate(3));
+				
+				</script>
+	
+	</SDateDay4>
+	<SFour>
+			<script type="text/javascript">
+
+				document.write(getFunction(currentDate.getDay()+3));
+				
+			</script>
+	</SFour>
+	
+<!--
+	Unused code for the fifth day that I no longer have
+	<SDateDay5>
+			<SBold>
+				<script type="text/javascript">
+
+					document.write(getTheDate(4));
+				
+				</script>
+			</SBold>
+			<script type="text/javascript">
+
+				document.write(getFunction(currentDate.getDay()+4));
+				
+			</script>
+	</SDateDay5>
+-->
+
+<body>
+	<STimes>
+		2:50<br>3:45<br><br>4:00<br>5:00<br><br>5:00<br>5:30<br><br>5:30<br>6:15 <!-- The different times for the website-->
+	</STimes>
+</body>
+
+</body>
+<a href="https://www.kentdenver.org">
+	<div class="container">
+  		<img src="KentL.jpg" alt="KentLogo">
+  		<button class="btn">Button</button>
+	</div>
+</a>
+
+</html>
+
+<SBottomBlueImage>
+	<img src="BottomSS.jpg" width="1690" height="260">
+</SBottomBlueImage>
+
